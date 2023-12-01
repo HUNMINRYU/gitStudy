@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selector</title>
+
+  <style>
+    /* (1)전체선택자 => '*'로 표시 */
+    *{
+      font-family: serif;
+    }
+
+    /* (2)태그선택자 => 태그 이름으로 표시 */
+    li{
+      font-size: large;
+    }
+
+    /* 
+      아이디: 중복 불가능, 문서내에서 한번만
+      클래스: 중복 가능,   재사용성 좋음,     (띄어쓰기로 구분)
+    */
+
+    /* (3)아이디선택자 => '#아이디'로 표시 */
+    #myClass{
+      background-color: lightblue;
+    }
+
+    /* (4)클래스선택자 => '.클래스'로 표시 */
+    .otherClass{
+      background-color: lightgray;
+    }
+    
+    
+    /* (mission) 빅데이터,IOT 밑줄 스타일 지정
+    => class속성 부여해서 사용할 것!
+    */
+    .meClass{
+      text-decoration: underline;
+    }
+
+    </style>
+
+</head>
+<body>
+  <h3>스마트인재개발원 과정 안내</h3>
+  <ul>
+    <li class="otherClass">인공지능</li>
+    <li class="otherClass meClass">빅데이터</li>
+    <li id="myClass" class="meClass">IOT</li>
+  </ul>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>color</title>
+  <style>
+
+    /* 
+    색상단위
+    (1) 색상 이름 : HTML 컬러명을 이용해서 색상 지정
+                    orange, tomato, ...
+    (2) HEX 코드  : #0000FF, 00~FF 사이의 16진수 값
+                    #FF0000 -> RED, #0000FF -> BLUE
+    (3) RGB       : RGB(Red, Green, Blue), 0~255값
+                    rgb(0,0,0)       -> black
+                    rgb(255,255,255) -> white
+
+    (4) RGBA      : rgb(red,green,blue,alpha)
+                    alpha -> 색상 투명도 조정, 0~1 값
+    (5)
+    (6)
+    */
+    div{
+      width: 100px;
+      height: 100px;
+    }
+
+    #box1{
+      background-color: pink;
+    }
+
+    #box2{
+      background-color: #ffd700;
+    }
+
+    #box3{
+      background-color: rgb(0,255,0);
+    }
+
+    #box4{
+      background-color: rgba(0,255,0,0.17);
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <!-- #box$*4 -->
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+  <div id="box4"></div>
+</body>
+</html>

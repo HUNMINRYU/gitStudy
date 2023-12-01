@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cascade</title>
+  <style>
+    /* 
+    cascade: 하나의 요소에 여러 스타일이 적용될 때 우선순위
+
+    전체선택자(0) < 태그선택자(1) < 클래스선택자(10) < 아이디선택자(100) < !important
+               └(명시도)
+    !important => 최상위 적용 키워드 ';'앞에 작성
+    */
+
+    .classSel{ 
+      color: brown !important;
+    }
+
+    li{
+      color: red;
+    }
+
+    *{
+      color: green;
+    }
+
+    #idSel{
+      color: blue;
+    }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <h3>저녁 메뉴 추천</h3>
+  <ul>
+    <li id="idSel" class="classSel">김치찌개</li>
+    <li>곰탕</li>
+    <li>등갈비찜</li>
+  </ul>
+</body>
+</html>

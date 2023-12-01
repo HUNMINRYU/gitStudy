@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>active selector</title>
+  <style>
+    /* 반응선택자: 사용자의 반응으로 생성되는 특정한 상태를 선택
+    
+    마우스 올렸을때  => :hover
+    마우스 클릭했을때=> :active
+    */
+
+    div:hover{
+      color: red;
+    }
+
+    div:active{
+      background-color: lightpink;
+    }
+
+    /* 
+    h3에 마우스를 올렸을 때, p의 글씨 색깔을 초록색으로 변경!
+    기준 - h3에 마우스 올라간 반응 상태
+    선택 - h3의 형제인 p
+                      <근접후행선택자>
+    */
+
+    h3:hover + p{
+      color: green;
+    }
+  </style>
+
+</head>
+<body>
+  <div>Hello World!</div>
+
+  <br><br>
+  <h3>mouse over</h3>
+  <p>color change</p>
+</body>
+</html>
